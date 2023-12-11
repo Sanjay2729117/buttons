@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+.button{
+    width: 160px;
+height: 36px;
+border-radius: 25px;
+border: 1px solid #000;
+background: #4F4AD7;
+position: relative;
+}
+.text{
+    width: 78px;
+height: 23.657px;
+color: #FAFAFA;
+font-family: Karla;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+top: 6px;
+left: 41px;
+}
+body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    align-items: center;
+}
