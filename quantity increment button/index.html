@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>I & D Button</title>
+</head>
+
+<body>
+    <div class="container">
+     
+        <div class="t">1</div>
+        
+        <button class="c1" onclick="dec()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+            <path d="M30 2.3736L16.8293 15.5898C16.8216 15.5976 16.814 15.6051 16.806 15.6125C16.7377 15.676 16.385 15.9911 16.0955 16C15.8048 16.0089 15.4448 15.7133 15.3447 15.6256C15.3264 15.6096 15.3092 15.5928 15.292 15.5756L2.191 2.3736" stroke="white" stroke-width="4" stroke-linecap="round"/>
+            </svg></button>
+        <button class="c2" onclick="inc()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="18" viewBox="0 0 32 18" fill="none">
+<path d="M30 16L16.8293 2.78376C16.8216 2.77603 16.814 2.76851 16.806 2.76107C16.7377 2.69756 16.385 2.38249 16.0955 2.3736C15.8048 2.36466 15.4448 2.66032 15.3447 2.74798C15.3264 2.76399 15.3092 2.78078 15.292 2.79804L2.191 16" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg></button>
+    </div>
+    <script>
+        var increment = 1;
+        var price=1000;
+        const sel = document.querySelector(".t");
+        function inc() {
+            increment++;
+            sel.textContent = increment;
+            console.log(price*increment);
+        }
+        function dec() {
+            if (increment > 1) {
+                increment--;
+                sel.textContent = increment;
+            }
+            console.log(price*increment);
+        }
+
+    </script>
+</body>
+
+</html>
